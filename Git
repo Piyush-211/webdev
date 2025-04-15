@@ -1,0 +1,93 @@
+Create version control account on GitHub and using Git commands to
+create a repository Create any application and push your code to GitHub.
+
+
+ChatGPT said:
+Sure! Here's a step-by-step guide to:
+
+✅ Create a GitHub account
+
+✅ Create a repository
+
+✅ Use Git commands to push your project (like the registration app above)
+
+🧑‍💻 Step 1: Create a GitHub Account
+Go to https://github.com
+
+Click Sign Up
+
+Fill in username, email, password
+
+Verify email and complete signup
+
+📦 Step 2: Create a New Repository on GitHub
+After login, click the “+” icon in the top-right
+
+Select “New repository”
+
+Enter:
+
+Repository name: registration-app (or anything)
+
+Description: Simple User Registration App using JS & LocalStorage
+
+Choose: Public (or Private if you prefer)
+
+Click Create repository
+
+🖥️ Step 3: Setup Git Locally on Vagrant/Ubuntu
+Open your terminal inside Vagrant:
+
+bash
+Copy
+Edit
+# Install Git if not installed
+sudo apt update
+sudo apt install git
+
+# Set up your identity (only once)
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+🛠️ Step 4: Initialize Git & Push Code
+Navigate to the folder where your app files are located:
+
+bash
+Copy
+Edit
+cd /var/www/html
+mkdir registration-app
+cd registration-app
+
+# Copy your files into this folder (or create new ones)
+# For example:
+nano index.html
+nano script.js
+nano users.html
+Then run these Git commands:
+
+bash
+Copy
+Edit
+# Initialize Git
+git init
+
+# Add your files
+git add .
+
+# Commit the changes
+git commit -m "Initial commit of user registration app"
+
+# Link to your GitHub repository (replace the URL)
+git remote add origin https://github.com/your-username/registration-app.git
+
+# Push code to GitHub
+git push -u origin master
+⚠️ Replace your-username and repository URL with your actual GitHub info.
+
+If you're using HTTPS, Git will prompt for your GitHub username and personal access token (instead of password).
+Create a token here: https://github.com/settings/tokens
+
+✅ You’re Done!
+You can now see your project live at:
+https://github.com/your-username/registration-app
+
